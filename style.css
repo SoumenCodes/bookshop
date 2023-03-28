@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Book Heading  */
+.font1 {
+  font-family: "Gentium Book Basic", serif;
+}
+.book-gff,
+a {
+  font-family: "Gentium Book Basic", serif;
+}
+.land {
+  background-image: url(/images/landing/li1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+/* .l-item1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 35px;
+} */
+/* .l-item2 {
+  overflow: hidden;
+}
+.l-item3 {
+  overflow: hidden;
+} */
+/* img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100%;
+  object-fit: cov0er;
+} */
+/* Glitch Effect */
+.glitch-wrapper {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background-color: #222; */
+}
+
+.glitch {
+  position: relative;
+  font-size: 130px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000000;
+  letter-spacing: 6px;
+  z-index: 1;
+}
+
+.glitch:before,
+.glitch:after {
+  display: block;
+  content: attr(data-glitch);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.glitch:before {
+  animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+    infinite;
+  color: #00ffff;
+  z-index: -1;
+}
+
+.glitch:after {
+  animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+    infinite;
+  color: #ff00ff;
+  z-index: -2;
+}
+
+@keyframes glitch-color {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-7px, 7px);
+  }
+
+  40% {
+    transform: translate(-7px, -7px);
+  }
+
+  60% {
+    transform: translate(7px, 7px);
+  }
+
+  80% {
+    transform: translate(7px, -7px);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+/* RESPONSIVE  */
